@@ -81,49 +81,49 @@ That means the current repository is best described as:
 
 ## 2. Repository Structure
 
-- [README.md](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/README.md)
+- [README.md]
   Project overview, math, training logic, and exact hyperparameters.
 - [RESULTS.md](RESULTS.md)
   In-depth explanation of the stored reference experiment in `data/runs/cnn_baseline/20260421-221441`, including plots, metrics, and technical interpretation.
-- [Brif.md](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/Brif.md)
+- [Brif.md]
   Assignment brief and project framing notes.
-- [configs/dataset_small.yaml](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/configs/dataset_small.yaml)
+- [configs/dataset_small.yaml]
   Default small dataset preset.
-- [configs/dataset_large.yaml](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/configs/dataset_large.yaml)
+- [configs/dataset_large.yaml]
   Larger array preset.
-- [configs/training_cnn.yaml](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/configs/training_cnn.yaml)
+- [configs/training_cnn.yaml]
   Default CNN training preset.
-- [scripts/generate_dataset.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/scripts/generate_dataset.py)
+- [scripts/generate_dataset.py]
   CLI entry point for dataset generation.
-- [scripts/train_cnn.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/scripts/train_cnn.py)
+- [scripts/train_cnn.py]
   CLI entry point for CNN training and evaluation.
-- [src/ris_dataset/config.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_dataset/config.py)
+- [src/ris_dataset/config.py]
   Dataset configuration dataclasses and validation.
-- [src/ris_dataset/geometry.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_dataset/geometry.py)
+- [src/ris_dataset/geometry.py]
   User placement and geometry utilities.
-- [src/ris_dataset/channels.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_dataset/channels.py)
+- [src/ris_dataset/channels.py]
   Sparse geometric BS-RIS and RIS-UE channel generation.
-- [src/ris_dataset/pilots.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_dataset/pilots.py)
+- [src/ris_dataset/pilots.py]
   RIS phase codebook generation and phase quantization.
-- [src/ris_dataset/generator.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_dataset/generator.py)
+- [src/ris_dataset/generator.py]
   Split generation, sample generation, and LS estimator.
-- [src/ris_dataset/io.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_dataset/io.py)
+- [src/ris_dataset/io.py]
   Complex-to-real serialization helpers.
-- [src/ris_training/config.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_training/config.py)
+- [src/ris_training/config.py]
   Training config parsing and CLI overrides.
-- [src/ris_training/data.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_training/data.py)
+- [src/ris_training/data.py]
   `.npz` loading, normalization, and PyTorch datasets.
-- [src/ris_training/model.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_training/model.py)
+- [src/ris_training/model.py]
   CNN model definition.
-- [src/ris_training/trainer.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_training/trainer.py)
+- [src/ris_training/trainer.py]
   Training loop, checkpointing, prediction, and evaluation.
-- [src/ris_training/metrics.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_training/metrics.py)
+- [src/ris_training/metrics.py]
   MSE/NMSE computation and SNR-wise summaries.
-- [src/ris_training/plotting.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/src/ris_training/plotting.py)
+- [src/ris_training/plotting.py]
   Publication-style experiment plots.
-- [tests/test_generator.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/tests/test_generator.py)
+- [tests/test_generator.py]
   Dataset generation and LS sanity tests.
-- [tests/test_training.py](/Users/piyush/dev/project/Wirless Communiaction/RIS-Channel-Estimation-Using-CNN-/tests/test_training.py)
+- [tests/test_training.py]
   Loader, shape, metric, and training smoke tests.
 
 ## 3. Problem Setup
